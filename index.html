@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daham Pasal Final Exam Booster - Support 2024 Batch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border-radius: 20px;
+            border: 2px solid #d4af37;
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .subtitle-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+            color: #0a0a0a;
+            padding: 8px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.95em;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .video-container {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            border: 2px solid #2a2a2a;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .placeholder-message {
+            text-align: center;
+            padding: 80px 40px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border-radius: 12px;
+            border: 2px dashed #d4af37;
+        }
+
+        .placeholder-message h2 {
+            color: #ffd700;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .placeholder-message p {
+            color: #cccccc;
+            font-size: 1.1em;
+        }
+
+        .pdf-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+            color: #0a0a0a;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .pdf-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.5);
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+        }
+
+        .pdf-button:active {
+            transform: translateY(-1px);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .support-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 30px 0;
+            border: 2px solid #d4af37;
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);
+        }
+
+        .support-section h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #ffd700;
+            font-size: 2em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .support-email {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .support-email p {
+            color: #cccccc;
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .support-email a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+        }
+
+        .support-email a:hover {
+            color: #ffed4e;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .social-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .telegram-btn {
+            background: linear-gradient(135deg, #0088cc 0%, #00a8e8 100%);
+            color: #ffffff;
+        }
+
+        .telegram-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 136, 204, 0.4);
+            background: linear-gradient(135deg, #00a8e8 0%, #0cc 100%);
+        }
+
+        .instagram-btn {
+            background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+            color: #ffffff;
+        }
+
+        .instagram-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(131, 58, 180, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-top: 2px solid #2a2a2a;
+            color: #888888;
+            font-size: 0.95em;
+        }
+
+        .credits {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #d4af37;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle-badge {
+                font-size: 0.85em;
+                padding: 6px 18px;
+            }
+
+            .video-container {
+                padding: 20px;
+            }
+
+            .support-section {
+                padding: 25px;
+            }
+
+            .support-section h2 {
+                font-size: 1.6em;
+            }
+
+            .social-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .social-btn {
+                justify-content: center;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daham Pasal Final Exam Booster</h1>
+            <span class="subtitle-badge">Support 2024 Batch</span>
+        </header>
+
+        <div class="video-container">
+            <div id="videoContent"></div>
+            <div id="pdfButtonContainer" class="button-container hidden">
+                <a href="#" id="pdfDownloadBtn" class="pdf-button" target="_blank">
+                    📄 Download Study Material
+                </a>
+            </div>
+        </div>
+
+        <div class="support-section">
+            <h2>Support & Community</h2>
+            <div class="support-email">
+                <p>Need help? Contact us:</p>
+                <a href="mailto:your.dahampasal@gmail.com">your.email@gmail.com</a>
+            </div>
+            <div class="social-buttons">
+                <a href="https://t.me/your_telegram_group" class="social-btn telegram-btn" target="_blank">
+                    <span>📱</span> Join Telegram
+                </a>
+                <a href="https://instagram.com/your_instagram" class="social-btn instagram-btn" target="_blank">
+                    <span>📸</span> Follow Instagram
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 Daham Pasal Education Initiative. Strictly for educational purposes.</p>
+            <p class="credits">Special thanks to Mubra Webworks & SJ Art Creation</p>
+        </footer>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const videoId = urlParams.get('v');
+        const pdfLink = urlParams.get('pdf');
+        
+        const videoContent = document.getElementById('videoContent');
+        const pdfButtonContainer = document.getElementById('pdfButtonContainer');
+        const pdfDownloadBtn = document.getElementById('pdfDownloadBtn');
+
+        if (videoId) {
+            videoContent.innerHTML = `
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/${videoId}" 
+                        allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                    </iframe>
+                </div>
+            `;
+        } else {
+            videoContent.innerHTML = `
+                <div class="placeholder-message">
+                    <h2>🎓 Welcome to Daham Pasal Final Exam Booster</h2>
+                    <p>Please select a lesson to begin your study session</p>
+                </div>
+            `;
+        }
+
+        if (pdfLink) {
+            pdfButtonContainer.classList.remove('hidden');
+            pdfDownloadBtn.href = pdfLink;
+        }
+
+        // Social links are now directly in the HTML with target="_blank"
+    </script>
+</body>
+</html>
